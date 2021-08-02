@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upskill</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css ">
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="https://www.nicepng.com/png/full/119-1194121_development-skill-icon-skills-and-talents.png"
+                        width="30" height="30" alt="skill image" loading="lazy" class="d-inline-block align-top">
+                    Upskill</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav nav-tabs ">
+                        <li class="nav-item">
+                            <a class="nav-link  bg-gradient-dark text-dark" aria-current="page"
+                                href="/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  bg-gradient-dark text-dark active" href="/login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  bg-gradient-dark text-dark" href="/Sign Up.html">Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  bg-gradient-dark text-dark" href="/contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    
+    
+    <!-- End Header -->
+    
+    <!--content-->
+    <content id="back">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mt-5">
+                <!--map-->
+                 <img src="https://quizky.com/wp-content/themes/quizky/images/Frame%2010.png" alt="login" width="500" height="500">
+                    
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <center>
+                        <h3>
+                          <i class="fa fa-lock"></i>
+                  <i class="fas fa-sign-in-alt">Login</i>
+                  </h3>
+              </center>
+                  
+                </div><br><br>
+
+                <div class="card-body">
+                  <form action="" class="needs-validation" method="POST" novalidate>
+                    <div class="form-group">
+                      <label for="email"><h2>Email id</h2></label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          
+                          <span class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                          </span>
+                          </div>
+                          <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="you@awesome.com"
+                        aria-describedby="emailHelp"
+                        required
+                      />
+                      <div class="valid-feedback">perfect</div>
+                      <div class="invalid-feedback">enter proper mail format</div>
+
+                        </div>
+                      </div>
+                      
+                  
+                    <br><br>
+
+                    <div class="form-group">
+                      <label for="password"><h2>Password</h2></label>
+                     
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            
+                            <span class="input-group-text">
+                              <i class="fa fa-key"></i>
+                            </span>
+                            </div>
+                            <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          class="form-control"
+                          placeholder="enter your password"
+                          
+                          
+                          required
+                        />
+                        <span id = "message1" style="color:red"> </span>
+                        
+                          </div>
+                        </div><br>
+
+                      <div class="form-group text-center">
+                        
+      
+                        <button class="btn btn-success">
+                          <i class="fa fa-unlock mr-1"></i>
+                          Login
+                        </button>
+                      </div>
+
+                      <div class="pt-3 text-center">
+                        <small class="">
+                          Don't have an account?
+                          <a href="/Sign Up.html">Sign up</a>
+                        </small>
+                      </div>
+                      
+                      
+
+                  </div>
+
+
+
+                    </form>
+                </div>
+
+
+
+          
+            </div>
+            </div>
+    </content>
+   
+
+    <!--end content-->
+
+
+    <!-- Bootstrap JS -->
+    <script src="./assest/js/jquery.min.css"></script>
+    <script src="./assest/js/bootstrap.min.js"></script>
+    <script>
+
+   
+        
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Code
+            let forms = document.getElementsByTagName("form");
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
+
+    <script>
+      function validateForm() {  
+        //collect form data in JavaScript variables  
+        var pw1 = document.getElementById("password").value;   
+        
+        
+        //check empty password field  
+        if(pw1 == "") {  
+          document.getElementById("message1").innerHTML = "**Fill the password please!";  
+          return false;  
+        }  
+    </script>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upskill</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css ">
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="https://www.nicepng.com/png/full/119-1194121_development-skill-icon-skills-and-talents.png"
+                        width="30" height="30" alt="skill image" loading="lazy" class="d-inline-block align-top">
+                    Upskill</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav nav-tabs ">
+                        <li class="nav-item">
+                            <a class="nav-link  bg-gradient-dark text-dark" aria-current="page"
+                                href="/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  bg-gradient-dark text-dark" href="/login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  bg-gradient-dark text-dark active" href="/Sign Up.html">Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  bg-gradient-dark text-dark" href="/contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    
+    
+    <!-- End Header -->
+    
+    <!--content-->
+    <content id="home">
+        <div class="container mt-5">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <center>
+                                <h3>
+                                    <i class="fa fa-user-plus"></i>
+                          <i class="fas fa-sign-in-alt">Sign Up</i>
+                          </h3>
+                      </center>
+                          
+                        </div>
+                        
+                        <div class="card-body">
+                            <form onsubmit ="return validateForm()" action="" class="needs-validation" method="POST" novalidate>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="name">Full Name</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                
+                                                <span class="input-group-text">
+                                                  <i class="fa fa-user"></i>
+                                                </span>
+                                                </div>
+                                                <input
+                                              type="text"
+                                              name="name"
+                                              id="name"
+                                              class="form-control"
+                                              placeholder="enter your name"
+                                              
+                                              required
+                                            />
+                                            <div class="valid-feedback">perfect</div>
+                                            <div class="invalid-feedback">enter name</div>
+                      
+                                              </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group mt-4">
+                                            <label for="gender">Gender</label>
+                                            <div class="ml-2 form-check form-check-inline">
+                                              <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="gender"
+                                                value="Male"
+                                                id="gender"
+                                                required
+                                              />
+                                              <label class="form-check-label" for="gender">Male</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="gender"
+                                                id="female"
+                                                value="Female"
+                                              />
+                                              <label class="form-check-label" for="female">Female</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="gender"
+                                                id="others"
+                                                value="Others"
+                                              />
+                                              <label class="form-check-label" for="others">Others</label>
+                                            </div>
+                                          </div>
+
+                                    </div>
+                                </div><br>
+
+                                
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="number">Phone Number</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                
+                                                <span class="input-group-text">
+                                                  <i class="fa fa-phone"></i>
+                                                </span>
+                                                </div>
+                                                <input
+                                              type="number"
+                                              name="number"
+                                              id="number"
+                                              class="form-control"
+                                              placeholder="enter your number"
+                                              
+                                              required
+                                            />
+                                            <div class="valid-feedback">perfect</div>
+                                            <div class="invalid-feedback">enter number</div>
+                      
+                                              </div>
+                                            </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="email">Email id</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                
+                                                <span class="input-group-text">
+                                                  <i class="fa fa-envelope"></i>
+                                                </span>
+                                                </div>
+                                                <input
+                                              type="email"
+                                              name="email"
+                                              id="email"
+                                              class="form-control"
+                                              placeholder="you@awesome.com"
+                                              aria-describedby="emailHelp"
+                                              required
+                                            />
+                                            <div class="valid-feedback">perfect</div>
+                                            <div class="invalid-feedback">enter proper mail format</div>
+                      
+                                              </div>
+                                            </div>
+
+                                    </div>
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                
+                                                <span class="input-group-text">
+                                                  <i class="fa fa-key"></i>
+                                                </span>
+                                                </div>
+                                                <input
+                                              type="password"
+                                              name="password"
+                                              id="password"
+                                              class="form-control"
+                                              placeholder="enter your password"
+                                              
+                                              
+                                              required
+                                            />
+                                            <span id = "message1" style="color:red"> </span>
+                                            
+                                              </div>
+                                            </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="confirmpassword">Confirm Password</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                
+                                                <span class="input-group-text">
+                                                  <i class="fa fa-key"></i>
+                                                </span>
+                                                </div>
+                                                <input
+                                              type="password"
+                                              name="confirmpassword"
+                                              id="confirmpassword"
+                                              class="form-control"
+                                              placeholder="enter your confirm password"
+                                              
+                                              
+                                              required
+                                            />
+                                            <span id = "message2" style="color:red"> </span>
+                                            
+                                              </div>
+                                            </div>
+
+                                    </div>
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="date">Date of Birth</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                
+                                                <span class="input-group-text">
+                                                  <i class="fa fa-calendar"></i>
+                                                </span>
+                                                </div>
+                                                <input
+                                              type="date"
+                                              name="date"
+                                              id="date"
+                                              class="form-control"
+                                              placeholder="enter your DOB"
+                                              
+                                              required
+                                            />
+                                            <div class="valid-feedback">perfect</div>
+                                            <div class="invalid-feedback">enter DOB</div>
+                      
+                                              </div>
+                                            </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="Location">Location</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                
+                                                <span class="input-group-text">
+                                                  <i class="fa fa-map-marker"></i>
+                                                </span>
+                                                </div>
+                                                <input
+                                              type="text"
+                                              name="location"
+                                              id="location"
+                                              class="form-control"
+                                              placeholder="enter your city/town name"
+                                              
+                                              required
+                                            />
+                                            <div class="valid-feedback">perfect</div>
+                                            <div class="invalid-feedback">enter location</div>
+                      
+                                              </div>
+                                            </div>
+                                    </div>
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="source">Qualification</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-graduation-cap"></i>
+                                                
+                                                    </span>
+                                                   
+                                                </div>
+                                                
+
+                                                <select
+                                              name="source"
+                                              id="source"
+                                              class="form-control"
+                                              required
+                                            >
+                                              <option value="">--Select Option--</option>
+                                              <option value="student">student</option>
+                                              <option value="Professional">Professional</option>
+                                              
+                                            </select>
+
+                                            </div>
+
+                                            
+                                          </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="source">Select your preferred course</label>
+                                            <div class="input-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <i class="fa fa-book"></i>
+                                                    
+                                                        </span>
+                                                       
+                                                    </div>
+
+                                                <select
+                                              name="source"
+                                              id="source"
+                                              class="form-control"
+                                              required
+                                            >
+                                              <option value="">--Select Option--</option>
+                                              <option value="web">Web Development</option>
+                                              <option value="machine">Machine Learning</option>
+                                              <option value="Cyber">Cyber Security</option>
+                                              <option value="Cloud">Cloud Computing</option>
+                                              <option value="Ethical">Ethical Hacking</option>
+                                              
+                                            </select>
+
+                                            </div>
+                                            
+                                          </div>
+
+                                    </div>
+                                </div><br>
+                                
+                                
+                                <div class="form-group form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="termsAgreement"
+                                      required
+                                    />
+                                    <label class="form-check-label " for="termsAgreement">
+                                      I agree to terms and conditions.
+                                    </label>
+                                  </div>
+                                  
+                  
+                                  <div class="form-group text-center">
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                  
+                                    <button class="btn btn-success">
+                                      <i class="fa fa-external-link mr-1"></i>
+                                      Register
+                                    </button>
+                                  </div>
+                                  <div class="pt-3 text-center">
+                                    <small class="">
+                                      Already registered?
+                                      <a href="/login.html">Login</a>
+                                    </small>
+                                  </div>
+                                  
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </content>
+    <!--end content-->
+
+
+    <!-- Bootstrap JS -->
+    <script src="./assest/js/jquery.min.css"></script>
+    <script src="./assest/js/bootstrap.min.js"></script>
+    <script>
+       function validateForm() {  
+              //collect form data in JavaScript variables  
+              var pw1 = document.getElementById("password").value;  
+              var pw2 = document.getElementById("confirmpassword").value;  
+              
+              
+              //check empty password field  
+              if(pw1 == "") {  
+                document.getElementById("message1").innerHTML = "**Fill the password please!";  
+                return false;  
+              }  
+              
+              //check empty confirm password field  
+              if(pw2 == "") {  
+                document.getElementById("message2").innerHTML = "**Enter the password please!";  
+                return false;  
+              }   
+               
+              //minimum password length validation  
+              if(pw1.length < 8) {  
+                document.getElementById("message1").innerHTML = "**Password length must be atleast 8 characters";  
+                return false;  
+              }  
+            
+              //maximum length of password validation  
+              if(pw1.length > 15) {  
+                document.getElementById("message1").innerHTML = "**Password length must not exceed 15 characters";  
+                return false;  
+              }  
+              
+              if(pw1 != pw2) {  
+                document.getElementById("message2").innerHTML = "**Passwords are not same";  
+                return false;  
+              } else {  
+                alert (" password created successfully");  
+                document.write(" Form has been submitted ");  
+              }  
+           }  
+        (function () {
+          "use strict";
+          window.addEventListener(
+            "load",
+            function () {
+              // Code
+              let forms = document.getElementsByTagName("form");
+              var validation = Array.prototype.filter.call(
+                forms,
+                function (form) {
+                  form.addEventListener(
+                    "submit",
+                    function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add("was-validated");
+                    },
+                    false
+                  );
+                }
+              );
+            },
+            false
+          );
+        })();
+        </script>
+        
+</body>
+
+</html>
